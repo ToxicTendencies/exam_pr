@@ -1,0 +1,181 @@
+{
+  "schema_version": "2.2-subject-bank",
+  "subject": {
+    "id": "subject_id",
+    "title": "Название предмета",
+    "language": "ru",
+    "order": 100
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "single_choice",
+      "topic": "Тема 1",
+      "ticket_number": 1,
+      "ticket_question_number": 1,
+      "question": "Текст вопроса с одним правильным ответом",
+      "options": [
+        "Первый вариант",
+        "Второй вариант",
+        "Третий вариант",
+        "Четвёртый вариант"
+      ],
+      "correct": 2,
+      "explanation": {
+        "topic_markdown": "**Разбор темы.** Объясните, почему именно так.",
+        "answers_markdown": "Разбор каждого варианта.",
+        "correct_answer_markdown": "Правильный ответ — **второй вариант**."
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "topic": "Тема 1",
+      "ticket_number": 1,
+      "ticket_question_number": 2,
+      "question": "Текст вопроса с несколькими правильными ответами",
+      "options": [
+        {
+          "id": 1,
+          "text": "Правильный вариант 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "text": "Неправильный вариант",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "text": "Правильный вариант 2",
+          "correct": true
+        }
+      ],
+      "explanation": {
+        "topic_markdown": "**Разбор темы.**",
+        "answers_markdown": "Разбор каждого варианта.",
+        "correct_answer_markdown": "Правильные ответы — **1 и 3**."
+      }
+    },
+    {
+      "id": 3,
+      "type": "open_text",
+      "topic": "Тема 1",
+      "ticket_number": 1,
+      "ticket_question_number": 3,
+      "question": "Введите термин или короткий ответ",
+      "accepted_answers": [
+        "Правильный ответ",
+        "Допустимый вариант"
+      ],
+      "case_sensitive": false,
+      "explanation": {
+        "topic_markdown": "**Разбор темы.**",
+        "answers_markdown": "Какие ответы принимаются и почему.",
+        "correct_answer_markdown": "Ожидается: **Правильный ответ**."
+      }
+    },
+    {
+      "id": 4,
+      "type": "matching",
+      "topic": "Тема 1",
+      "ticket_number": 1,
+      "ticket_question_number": 4,
+      "question": "Установите соответствие между понятием и определением",
+      "left_items": [
+        {
+          "id": 1,
+          "text": "Понятие 1"
+        },
+        {
+          "id": 2,
+          "text": "Понятие 2"
+        }
+      ],
+      "right_items": [
+        {
+          "id": 1,
+          "text": "Определение 1"
+        },
+        {
+          "id": 2,
+          "text": "Определение 2"
+        },
+        {
+          "id": 3,
+          "text": "Лишний вариант"
+        }
+      ],
+      "correct_mapping": [
+        {
+          "left_id": 1,
+          "right_id": 1
+        },
+        {
+          "left_id": 2,
+          "right_id": 2
+        }
+      ],
+      "explanation": {
+        "topic_markdown": "**Разбор темы.**",
+        "answers_markdown": "Разбор соответствий.",
+        "correct_answer_markdown": "1 → 1; 2 → 2."
+      }
+    },
+    {
+      "id": 5,
+      "type": "ticket",
+      "topic": "Тема 1",
+      "ticket_number": 1,
+      "ticket": "Формулировка билета или тема, на которую нужен развёрнутый ответ",
+      "answer_markdown": "**Развёрнутый ответ**\n\nПолный текст ответа на билет.",
+      "explanation": {}
+    },
+    {
+      "id": 6,
+      "type": "true_false",
+      "topic": "Тема 1",
+      "ticket_number": 1,
+      "ticket_question_number": 6,
+      "question": "Верно или неверно: <текст утверждения>",
+      "answer": true,
+      "explanation": {
+        "topic_markdown": "**Разбор темы.**",
+        "answers_markdown": "Почему утверждение верно или неверно.",
+        "correct_answer_markdown": "**Верно.**"
+      }
+    },
+    {
+      "id": 7,
+      "type": "sequence",
+      "topic": "Тема 1",
+      "ticket_number": 1,
+      "ticket_question_number": 7,
+      "question": "Расположите этапы в правильном порядке",
+      "steps": [
+        "Первый этап",
+        "Второй этап",
+        "Третий этап"
+      ],
+      "correct_order": [
+        1,
+        2,
+        3
+      ],
+      "explanation": {
+        "topic_markdown": "**Разбор темы.**",
+        "answers_markdown": "Почему порядок именно такой.",
+        "correct_answer_markdown": "1 → 2 → 3."
+      }
+    },
+    {
+      "id": 8,
+      "type": "card",
+      "topic": "Тема 1",
+      "ticket_number": 1,
+      "front": "Термин или вопрос на лицевой стороне карточки",
+      "back": "**Определение** на обратной стороне. Поддерживается простой markdown.",
+      "explanation": {}
+    }
+  ]
+}

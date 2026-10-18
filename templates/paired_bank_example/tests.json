@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "dataset": {
+    "title": "Пример тестового банка",
+    "language": "ru",
+    "question_count": 1
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "single_choice",
+      "ticket_number": 1,
+      "ticket_question_number": 1,
+      "source_exam_question_id": 1,
+      "topic": "Формулировка экзаменационного билета",
+      "subtopic": "Проверяемый фрагмент",
+      "difficulty": "easy",
+      "skill": "воспроизведение",
+      "question": "Текст тестового вопроса",
+      "options": [
+        {
+          "id": 1,
+          "text": "Правильный ответ",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "text": "Неправильный ответ",
+          "correct": false
+        }
+      ],
+      "correct_option_ids": [
+        1
+      ],
+      "explanation": {
+        "topic_markdown": "Мини-конспект.",
+        "answers_markdown": "Разбор вариантов.",
+        "correct_answer_markdown": "**1. Правильный ответ**"
+      }
+    }
+  ]
+}

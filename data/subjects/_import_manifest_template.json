@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.2-subject-import",
+  "subject": {
+    "id": "subject_id",
+    "title": "Название предмета",
+    "language": "ru",
+    "order": 100
+  },
+  "imports": [
+    {
+      "path": "../imports/subject_id/tickets.json",
+      "format": "exam_tickets_v1",
+      "id_offset": 0
+    },
+    {
+      "path": "../imports/subject_id/tests.json",
+      "format": "exam_tests_v1",
+      "id_offset": 10000
+    }
+  ]
+}

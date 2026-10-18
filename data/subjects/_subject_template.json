@@ -1,0 +1,31 @@
+{
+  "schema_version": "2.2-subject-bank",
+  "subject": {
+    "id": "subject_id",
+    "title": "Название предмета",
+    "language": "ru",
+    "order": 100
+  },
+  "questions": [],
+  "_how_to_use": [
+    "Это минимальный каркас банка. Файл с именем, начинающимся на подчёркивание,",
+    "сборщик игнорирует, поэтому templates можно держать рядом с рабочими банками.",
+    "",
+    "Чтобы не собирать примеры вручную, создайте готовый рабочий банк одной командой:",
+    "  python tools/new_subject.py --id anatomy --title \"Анатомия\" --order 30",
+    "",
+    "Команда создаёт data/subjects/<id>.json с одним рабочим примером каждого типа",
+    "вопроса, который сразу проходит проверку. Полный справочник полей:",
+    "  docs/SUBJECTS_DATA_FORMAT.md",
+    "  templates/subject_bank_template.json  ( пример каждого типа )",
+    "  templates/tickets_subject_template.json  ( банк только из билетов )",
+    "",
+    "После любых правок данных:",
+    "  python tools/build_data_bundles.py --check   # только проверка, ничего не пишет",
+    "  python tools/build_data_bundles.py         # собрать assets для APK",
+    "  python tools/verify_runtime_bundle.py       # проверить собранный бандл",
+    "",
+    "ВАЖНО: subject.id и id вопросов нельзя менять после первой сборки —",
+    "на них записан прогресс пользователей. Новые вопросы добавляйте с новыми id."
+  ]
+}

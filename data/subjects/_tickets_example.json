@@ -1,0 +1,23 @@
+{
+  "schema_version": "2.2-subject-bank",
+  "subject": {
+    "id": "example_tickets",
+    "title": "Пример билетов",
+    "language": "ru",
+    "order": 9999
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "ticket",
+      "ticket": "Билет 1. Название темы",
+      "answer_markdown": "**Развёрнутый ответ**\n\nПервый абзац ответа.\n\nВторой абзац ответа."
+    },
+    {
+      "id": 2,
+      "type": "ticket",
+      "ticket": "Билет 2. Другая тема",
+      "answer_text": "Обычный текст развёрнутого ответа без Markdown."
+    }
+  ]
+}
