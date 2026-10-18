@@ -1,0 +1,13 @@
+{
+  "name": "exam-training-ui-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Headless UI tests for the WebView app shell. Run: npm install && npm test",
+  "type": "module",
+  "scripts": {
+    "test": "node run_all.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0"
+  }
+}

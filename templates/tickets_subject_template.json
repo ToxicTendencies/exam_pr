@@ -1,0 +1,17 @@
+{
+  "schema_version": "2.2-subject-bank",
+  "subject": {
+    "id": "subject_id",
+    "title": "Название предмета",
+    "language": "ru",
+    "order": 100
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "ticket",
+      "ticket": "Формулировка билета",
+      "answer_markdown": "Развёрнутый ответ на билет"
+    }
+  ]
+}

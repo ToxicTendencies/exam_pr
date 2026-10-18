@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "dataset": {
+    "title": "Пример экзаменационных билетов",
+    "language": "ru",
+    "question_count": 1
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "open_text",
+      "question": "Формулировка экзаменационного билета",
+      "accepted_answers": [],
+      "answer": {
+        "answer_text": "Полный ответ обычным текстом.",
+        "answer_markdown": "**Полный ответ** с поддержкой простого Markdown."
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": "2.2-subject-bank",
+  "_instructions": [
+    "Скопируйте этот файл в data/subjects и переименуйте, например biology.json.",
+    "Измените subject.id на постоянный идентификатор из латинских строчных букв, цифр, _ или -.",
+    "Измените subject.title и замените примеры в questions своими заданиями.",
+    "ID всех заданий внутри предмета должны быть уникальными и стабильными после выпуска.",
+    "Поля ticket_number, ticket_question_number, topic, subtopic, difficulty и skill необязательны, но улучшают поиск и позволяют фильтровать тест по билету.",
+    "После изменения банка выполните: python3 tools/build_data_bundles.py"
+  ],
+  "subject": {
+    "id": "example_subject",
+    "title": "Пример предмета",
+    "language": "ru",
+    "order": 100
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "ticket",
+      "ticket_number": 1,
+      "topic": "Название темы первого билета",
+      "ticket": "Билет 1. Полная формулировка экзаменационного вопроса",
+      "answer_markdown": "**Краткое определение.** Здесь размещается полный развёрнутый ответ.\n\nМожно использовать несколько абзацев и **жирное выделение**."
+    },
+    {
+      "id": 10001,
+      "source_id": 1,
+      "type": "single_choice",
+      "ticket_number": 1,
+      "ticket_question_number": 1,
+      "source_exam_question_id": 1,
+      "topic": "Название темы первого билета",
+      "subtopic": "Проверяемый фрагмент темы",
+      "difficulty": "easy",
+      "skill": "воспроизведение",
+      "question": "Какой вариант является правильным?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Неправильный вариант",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "text": "Правильный вариант",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "text": "Ещё один неправильный вариант",
+          "correct": false
+        }
+      ],
+      "correct_option_ids": [
+        2
+      ],
+      "explanation": {
+        "topic_markdown": "**Мини-конспект.** Объяснение проверяемой темы.",
+        "answers_markdown": "**1.** Почему неверно.\n\n**2.** Почему верно.\n\n**3.** Почему неверно.",
+        "correct_answer_markdown": "**2. Правильный вариант**"
+      }
+    },
+    {
+      "id": 10002,
+      "source_id": 2,
+      "type": "multiple_choice",
+      "ticket_number": 1,
+      "ticket_question_number": 2,
+      "source_exam_question_id": 1,
+      "topic": "Название темы первого билета",
+      "subtopic": "Несколько правильных признаков",
+      "difficulty": "medium",
+      "skill": "выбор признаков",
+      "question": "Выберите все правильные утверждения.",
+      "options": [
+        {
+          "id": 1,
+          "text": "Правильное утверждение 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "text": "Неправильное утверждение",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "text": "Правильное утверждение 2",
+          "correct": true
+        }
+      ],
+      "correct_option_ids": [
+        1,
+        3
+      ],
+      "explanation": {
+        "topic_markdown": "Краткий разбор темы.",
+        "answers_markdown": "Разбор каждого варианта.",
+        "correct_answer_markdown": "**1. Правильное утверждение 1**\n\n**3. Правильное утверждение 2**"
+      }
+    },
+    {
+      "id": 10003,
+      "type": "open_text",
+      "ticket_number": 1,
+      "ticket_question_number": 3,
+      "topic": "Название темы первого билета",
+      "subtopic": "Термин",
+      "question": "Введите правильный термин.",
+      "accepted_answers": [
+        "основной термин",
+        "допустимый синоним"
+      ],
+      "case_sensitive": false,
+      "explanation": {
+        "topic_markdown": "Определение термина.",
+        "answers_markdown": "Почему этот термин подходит.",
+        "correct_answer_markdown": "**Основной термин**"
+      }
+    },
+    {
+      "id": 10004,
+      "type": "matching",
+      "ticket_number": 1,
+      "ticket_question_number": 4,
+      "topic": "Название темы первого билета",
+      "subtopic": "Соответствие объектов и признаков",
+      "question": "Установите соответствие.",
+      "left_items": [
+        {
+          "id": 1,
+          "text": "Объект А"
+        },
+        {
+          "id": 2,
+          "text": "Объект Б"
+        }
+      ],
+      "right_items": [
+        {
+          "id": 1,
+          "text": "Признак 1"
+        },
+        {
+          "id": 2,
+          "text": "Признак 2"
+        }
+      ],
+      "correct_mapping": [
+        {
+          "left_id": 1,
+          "right_id": 2
+        },
+        {
+          "left_id": 2,
+          "right_id": 1
+        }
+      ],
+      "explanation": {
+        "topic_markdown": "Краткое объяснение объектов и признаков.",
+        "answers_markdown": "Объект А соответствует признаку 2; объект Б — признаку 1.",
+        "correct_answer_markdown": "А → 2; Б → 1"
+      }
+    }
+  ]
+}

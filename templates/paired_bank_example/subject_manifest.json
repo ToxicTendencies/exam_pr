@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.2-subject-import",
+  "subject": {
+    "id": "example_subject",
+    "title": "Пример предмета из двух файлов",
+    "language": "ru",
+    "order": 100
+  },
+  "imports": [
+    {
+      "path": "../imports/example/tickets.json",
+      "format": "exam_tickets_v1",
+      "id_offset": 0
+    },
+    {
+      "path": "../imports/example/tests.json",
+      "format": "exam_tests_v1",
+      "id_offset": 10000
+    }
+  ]
+}

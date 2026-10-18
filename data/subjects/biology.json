@@ -1,0 +1,25 @@
+{
+  "schema_version": "2.2-subject-import",
+  "subject": {
+    "id": "biology",
+    "title": "Биология",
+    "language": "ru",
+    "order": 20
+  },
+  "imports": [
+    {
+      "path": "../imports/biology/biology_tickets.json",
+      "format": "exam_tickets_v1",
+      "id_offset": 0,
+      "description": "59 экзаменационных билетов с развёрнутыми ответами"
+    },
+    {
+      "path": "../imports/biology/biology_tests.json",
+      "format": "exam_tests_v1",
+      "id_offset": 10000,
+      "description": "1281 тестовый вопрос, сгруппированный по билетам 1–59"
+    }
+  ],
+  "_id_policy": "Билеты используют runtime ID 1–59. Тесты используют runtime ID 10001–11281. Не меняйте id_offset после выпуска, иначе будет потеряна привязка пользовательского прогресса.",
+  "_source_note": "Исходные файлы сохранены без содержательной правки. Адаптер преобразует open_text с вложенным answer в ticket и оставляет тестовые вопросы single_choice/multiple_choice."
+}
