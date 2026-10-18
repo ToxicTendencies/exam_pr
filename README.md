@@ -40,6 +40,7 @@ data/subjects/
 ```text
 data/subjects/pharmacology.json
 data/subjects/biology.json
+data/subjects/pediatrics.json
 ```
 
 Исходные отдельные банки биологии находятся в `data/imports/biology/` и подключаются манифестом `biology.json`.
@@ -163,7 +164,7 @@ Playwright-скрипты `tools/ui_smoke_test.py` и `tools/biology_ui_smoke_te
 
 ## Current Android release
 
-Version `1.3.0` (`versionCode 16`). The historical 1.0.2 packaging fix is documented in `docs/STARTUP_FIX.md`; phone startup hardening is documented in `docs/PHONE_STARTUP_FIX_1_2_1.md`; system-theme and test-statistics separation is documented in `docs/THEME_AND_TEST_STATS_1_2_2.md`.
+Version `1.4.0` (`versionCode 17`). The historical 1.0.2 packaging fix is documented in `docs/STARTUP_FIX.md`; phone startup hardening is documented in `docs/PHONE_STARTUP_FIX_1_2_1.md`; system-theme and test-statistics separation is documented in `docs/THEME_AND_TEST_STATS_1_2_2.md`.
 
 
 ## Safe Android shell
@@ -172,4 +173,4 @@ The Android shell is intentionally minimal: a single `Activity` with a local `We
 
 Application ID: `app.examtraining`
 
-Release line: `1.3.0`
+Release line: `1.4.0`
